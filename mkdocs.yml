@@ -1,0 +1,101 @@
+site_name: HOTIS Projects — Student Field Manual
+site_description: A reference guide for the Raspberry Pi AI + motor labs.
+site_url: https://arenile.github.io/hotis-docs-site/   # update with your GitHub username
+repo_url: https://github.com/Arenile/hotis-projects-starter
+edit_uri: ""
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Your toolkit: getting-started/orientation.md
+      - Using the terminal: getting-started/using-the-terminal.md
+      - Exploring your system: getting-started/exploring-your-system.md
+      - Opening & editing code: getting-started/editing-code.md
+      - Building & running: getting-started/build-and-run.md
+      - Resetting your work: getting-started/resetting-your-work.md
+      - Reading error messages: getting-started/reading-errors.md
+      - Shutting down safely: getting-started/shutting-down.md
+  - Programming Basics:
+      - How a C program works: programming-basics/how-a-c-program-works.md
+      - Variables & types: programming-basics/variables-and-types.md
+      - Printing with printf: programming-basics/printing-with-printf.md
+      - Making decisions (if/else): programming-basics/making-decisions.md
+      - Scaling numbers: programming-basics/scaling-numbers.md
+      - Bit operators: programming-basics/bit-operators.md
+  - Reference:
+      - Pins & constants: reference/pins-and-constants.md
+      - pinMode(): reference/pinmode.md
+      - digitalWrite(): reference/digitalwrite.md
+      - pwmWrite(): reference/pwmwrite.md
+      - analogRead(): reference/analogread.md
+      - delay(): reference/delay.md
+      - Hand state (AI): reference/hand-state.md
+  - Concepts:
+      - Analog vs digital: concepts/analog-vs-digital.md
+      - What is PWM?: concepts/what-is-pwm.md
+      - What is an ADC?: concepts/what-is-an-adc.md
+      - The motor driver: concepts/motor-driver.md
+      - Compiled vs interpreted: concepts/compiled-vs-interpreted.md
+      - How the AI works: concepts/how-the-ai-works.md
+  - The Labs:
+      - "Lab 1 · Count Your Instructions": labs/lab-1-count-your-instructions.md
+      - "Lab 2 · Analog Inputs": labs/lab-2-analog-inputs.md
+      - "Lab 3 · Digital I/O & Motors": labs/lab-3-digital-io-and-motors.md
+      - "Lab 4 · AI Inside & Out": labs/lab-4-ai-inside-and-out.md
+      - "Bonus · LED Speedometer": labs/bonus-led-speedometer.md
+  - Glossary: glossary.md
+  - Troubleshooting: troubleshooting.md
+  - For Educators: for-educators.md

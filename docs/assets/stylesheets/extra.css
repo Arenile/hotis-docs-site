@@ -1,0 +1,22 @@
+/* "Try it" challenge admonition */
+.md-typeset .admonition.tryit,
+.md-typeset details.tryit {
+  border-color: #00897b;
+}
+.md-typeset .tryit > .admonition-title,
+.md-typeset .tryit > summary {
+  background-color: rgba(0, 137, 123, 0.1);
+}
+.md-typeset .tryit > .admonition-title::before,
+.md-typeset .tryit > summary::before {
+  background-color: #00897b;
+  -webkit-mask-image: var(--md-admonition-icon--question);
+          mask-image: var(--md-admonition-icon--question);
+}
+
+/* Slightly larger wiring diagram images */
+.wiring-diagram img {
+  max-width: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
