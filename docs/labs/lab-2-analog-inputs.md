@@ -22,9 +22,9 @@ In this lab you connect the joystick to the Raspberry Pi through the MCP3008 chi
 
 Connect everything according to the wiring diagram. It is the single source of truth for where every wire goes.
 
-<div class="wiring-diagram">
+
 ![HOTIS Joystick and Fan Wiring Diagram](../assets/images/wiring-diagram-1.png)
-</div>
+
 
 [Download the full PDF](../assets/images/wiring-diagram.pdf){ .md-button }
 

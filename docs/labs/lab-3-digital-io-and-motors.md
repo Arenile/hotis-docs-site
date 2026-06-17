@@ -25,9 +25,8 @@ Today you have two chips to place instead of one: the MCP3008 (from Lab 2) and t
 
 ### The wiring diagram
 
-<div class="wiring-diagram">
+
 ![HOTIS Joystick and Fan Wiring Diagram](../assets/images/wiring-diagram-1.png)
-</div>
 
 [Download the full PDF](../assets/images/wiring-diagram.pdf){ .md-button }
 
@@ -97,11 +96,11 @@ The motor (with the fan blade) should spin. If it does not, check [Troubleshooti
 
 !!! question "Try it"
     Modify your program so the motor:
-    
+
     1. Spins one direction for 5 seconds.
     2. Stops and spins the other direction for 5 seconds.
     3. Then slows to 60% speed and keeps spinning at that forever.
-    
+
     Hints: you will need `delay()` for timing, and a fraction of `PWM_MAXVAL` for the final speed. Think about what 60% of `PWM_MAXVAL` looks like in code — and how `if/else` or multiple blocks can sequence the behavior. → [delay()](../reference/delay.md) · [pwmWrite()](../reference/pwmwrite.md)
 
 ---
